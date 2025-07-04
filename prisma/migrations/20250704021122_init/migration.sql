@@ -1,0 +1,8 @@
+-- CreateTable
+CREATE TABLE "time_test" (
+    "id" UUID NOT NULL,
+    "t1" TIMESTAMPTZ NOT NULL,
+    "t2" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "time_test_pkey" PRIMARY KEY ("id")
+);

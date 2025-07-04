@@ -1,0 +1,18 @@
+{
+  "name": "pgtz-old",
+  "version": "0.1.0",
+  "description": "Prisma client testing",
+  "type": "module",
+  "scripts": {
+    "start": "tsx ./src/index.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.11.1",
+    "dotenv": "^17.0.1",
+    "prisma": "^6.11.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.4",
+    "tsx": "^4.20.3"
+  }
+}

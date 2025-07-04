@@ -1,0 +1,18 @@
+// CREATE DATABASE pgtest OWNER postgres;
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model TimeTest {
+    id String   @id @default(uuid()) @db.Uuid
+    t1 DateTime @db.Timestamptz
+    t2 DateTime @default(now()) @db.Timestamptz
+
+    @@map("time_test")
+}
